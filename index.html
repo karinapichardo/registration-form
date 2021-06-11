@@ -13,10 +13,10 @@
         <h1>The code review</h1>
     </header>
     <div class="container">
-        <div class="sign-up-container">
+        <section class="sign-up-container">
             <h2>Signup for our newsletter</h2>
             <p>Get the latest news on how your code is doing right in your inbox</p>
-        </div>
+        </section>
 
         <hr class="thick-line">
         <hr class="thin-line">
@@ -38,7 +38,7 @@
 
                     <div class="contact-group">
                         <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="user-phone">
+                        <input type="tel" id="phone" name="user-phone" placeholder="xxx-xxx-xxx">
                     </div>
 
                     <div class="contact-group">
@@ -48,7 +48,7 @@
 
                     <div class="contact-group">
                         <label for="city">City</label>
-                        <input type="text" id="city" name="user-city">
+                        <input type="text" id="city" name="user-city" placeholder="e.g. Austin">
                     </div>
 
                     <div class="contact-group">
@@ -80,7 +80,7 @@
 
                     <div class="contact-group">
                         <label for="zipcode">Zip Code</label>
-                        <input type="number" id="zipcode" name="user-zipcode">
+                        <input type="text" id="zipcode" name="user-zipcode" pattern="[0-9]{5}">
 
                     </div>
                 </fieldset>
@@ -88,7 +88,7 @@
                 <hr class="thin-line">
 
                 <fieldset>
-                    <legend>Newsletter</legend>
+                    <legend id="news-title">Newsletter</legend>
                     <div class="news-group">
                         <p>Select the newsletters you would like to receive</p>
                         <input type="checkbox" id="html-news" name="newsletter" value="html-news" class="input-checkbox">
