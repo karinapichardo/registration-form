@@ -30,8 +30,12 @@ h1 {
 }
 
 .sign-up-container {
+    width: 100%;
+    padding: 2rem 0.5rem;
     text-align: center;
     line-height: 1.3rem;
+    background-color: #dff4f5;
+    margin-bottom: -1.7rem;
 }
 
 h2 {
@@ -43,12 +47,6 @@ h2 {
 .sign-up-container p {
     font-size: 0.94rem;
     color: #b5b5b5;
-}
-
-.news-group p {
-    color: #2c3d4a;
-    font-size: 0.9rem;
-    line-height: 1.5;
 }
 
 hr {
@@ -78,20 +76,14 @@ legend {
     padding-bottom: 1.1rem;
 }
 
-button[type="submit"] {
-    background-color: #5bb5b1;
-    color: white;
-    width: 100%;
-    height: 50px;
-    font-size: 1.1rem;
-    border-radius: 3px;
-    border: none;
-    margin-top: 1.2rem;
-    cursor: pointer;
+#news-title {
+    margin-bottom: -20px;
 }
 
-button[type="submit"]:hover {
-    background-color: #2c3d4a;
+.news-group p {
+    color: #2c3d4a;
+    font-size: 0.9rem;
+    line-height: 1.5;
 }
 
 input,
@@ -101,8 +93,11 @@ textarea {
 }
 
 input:focus,
-select:focus {
-    outline-color: #91a7bd;
+select:focus,
+textarea:focus {
+    box-shadow: 0 0 0 2px #3d6b6e;
+    transition: 0.3s ease-in;
+    outline: none;
 }
 
 .contact-group input,
@@ -125,12 +120,16 @@ select:focus {
     float: left;
 }
 
+.news-group input:focus {
+    box-shadow: 0 0 0 0;
+}
+
 select {
     font-size: 0.9rem;
     color: #b5b5b5;
 }
 
-input[type="number"] {
+#zipcode {
     width: 50%;
 }
 
@@ -141,7 +140,6 @@ label {
     padding-bottom: 0.5rem;
     font-weight: 200;
 }
-
 
 input::placeholder {
     font-size: 0.7rem;
@@ -158,10 +156,50 @@ textarea {
     border: 0;
 }
 
+button[type="submit"] {
+    background-color: #5bb5b1;
+    color: white;
+    width: 100%;
+    height: 50px;
+    font-size: 1.1rem;
+    border-radius: 3px;
+    border: none;
+    margin-top: 1.2rem;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #2c3d4a;
+    transition: 0.3s ease-in;
+}
+
 .copyright {
     color: #b5b5b5;
     font-style: italic;
     text-align: center;
     font-size: 0.8rem;
     margin-bottom: 10rem;
+}
+
+@media (min-width: 768px) {
+    legend {
+        margin-bottom: 1rem;
+    }
+
+    .contact-group {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .contact-group input,
+    .contact-group select {
+        width: 600px;
+        margin-bottom: 0.7rem;
+    }
+
+    #zipcode {
+        width: 25%;
+    }
 }
