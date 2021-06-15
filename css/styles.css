@@ -189,14 +189,16 @@ button[type="submit"]:hover {
     .contact-group {
         display: flex;
         flex-direction: row;
-        align-items: flex-start;
-        justify-content: space-between;
     }
 
     .contact-group input,
     .contact-group select {
         width: 600px;
         margin-bottom: 0.7rem;
+    }
+
+    .contact-group label {
+        flex-basis: 25%;
     }
 
     #zipcode {
