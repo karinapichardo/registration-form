@@ -146,7 +146,7 @@ input::placeholder {
     float: right;
     color: #b5b5b5;
     font-style: italic;
-    padding: 0.5rem;
+    padding: 1rem;
 }
 
 textarea {
@@ -154,6 +154,14 @@ textarea {
     height: 80px;
     background-color: #eee;
     border: 0;
+    padding: 1rem;
+    font-style: italic;
+
+}
+
+textarea::placeholder {
+    color: #b5b5b5;
+    font-size: 0.9rem;
 }
 
 button[type="submit"] {
