@@ -43,7 +43,7 @@
 
                     <div class="contact-group">
                         <label for="address">Street Address</label>
-                        <input type="text" id="address" name="user-address">
+                        <input type="text" id="address" name="user-address" placeholder="319 East 7th St">
                     </div>
 
                     <div class="contact-group">
@@ -80,7 +80,7 @@
 
                     <div class="contact-group">
                         <label for="zipcode">Zip Code</label>
-                        <input type="text" id="zipcode" name="user-zipcode" pattern="[0-9]{5}">
+                        <input type="text" id="zipcode" name="user-zipcode" pattern="[0-9]{5}" placeholder="10002">
 
                     </div>
                 </fieldset>
@@ -101,6 +101,7 @@
                         <label for="javascript-news">Javascript News</label>
 
                         <p>Newsletter format</p>
+
                         <input type="radio" id="html" name="format" value="html" class="radio-control">
                         <label for="html">HTML</label>
 
@@ -109,9 +110,10 @@
                     </div>
 
                     <div class="news-group">
-                        <p>Other topics you'd like to hear about</p>
+                        <label for="suggestions">Other topics you'd like to hear about</label>
                         <textarea id="suggestions" name="suggestions" placeholder="We value your feedback ..."></textarea>
                     </div>
+
                     <div class="news-group">
                         <button type="submit" id="submit">Sign Up</button>
                     </div>
