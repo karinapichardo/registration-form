@@ -201,7 +201,7 @@ button[type="submit"]:hover {
 
     .contact-group input,
     .contact-group select {
-        width: 600px;
+        flex-basis: 75%;
         margin-bottom: 0.7rem;
     }
 
@@ -210,6 +210,6 @@ button[type="submit"]:hover {
     }
 
     #zipcode {
-        width: 25%;
+        flex-basis: 25%;
     }
 }
