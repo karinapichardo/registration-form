@@ -114,9 +114,7 @@ textarea:focus {
 
 .input-checkbox,
 .radio-control {
-    /*    display: block;*/
     margin-right: 0.625rem;
-    margin-bottom: 0.6rem;
     float: left;
 }
 
